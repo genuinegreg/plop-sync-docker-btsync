@@ -1,0 +1,7 @@
+#!/bin/bash
+
+docker run -d -p :27027 \
+    -e NAME="test" \
+    -e SECRET="AZ54VMMWY5PHXXJRRKSNNDV5SGKWHIHHJ" \
+    -e DB_HOST="172.17.0.8" \
+    genuinegreg/plop-btsync
